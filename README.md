@@ -4,8 +4,8 @@ Monorepo skeleton for cross-border payments with Next.js frontend and separate N
 
 ## Workspaces
 
-- `frontend/` — Next.js app, Privy auth, Monad client setup, payment UI area
-- `backend/` — Fastify API, Privy verification, Monad server wallet/RPC, Nansen, Agora payment services
+- `frontend/` — Next.js app, Monad client setup, payment UI area
+- `backend/` — Fastify API, Monad RPC, Nansen, Agora payment services
 
 ## Setup
 
@@ -18,8 +18,7 @@ npm run dev
 
 ## Provider setup
 
-- Privy: add `NEXT_PUBLIC_PRIVY_APP_ID`, `PRIVY_APP_ID`, `PRIVY_APP_SECRET`
-- Monad: confirm chain ID/RPC, add backend signing key only if server-side transactions needed
+- Monad: confirm chain ID/RPC
 - Nansen: add API key/base URL in backend env
 - Agora: add API key/base URL/webhook secret/settlement account in backend env
 
